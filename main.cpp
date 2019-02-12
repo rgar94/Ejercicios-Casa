@@ -1,6 +1,11 @@
 /* Este programa dibuja una "Tetera", este objeto esta definido
  * en GLUT, se crea una fuente de luz, y un material */
-
+ /*
+ García Callejas Ricardo
+ Grupo 2
+ Visual Studio 2017
+ Reporte 1
+ */
 //Incluimos las librerias
 //#include <GL/glut.h>
 //#include <stdlib.h>
