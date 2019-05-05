@@ -1,11 +1,11 @@
-//Semestre 2017 - 2
-//************************************************************//
-//************************************************************//
-//************** Alumno (s): *********************************//
-//*************											******//
-//*************											******//
-//************************************************************//
-
+//Semestre 2019 - 2
+ /*
+ Garc√≠a Callejas Ricardo
+ Grupo 2
+ Visual Studio 2017
+ Pr√°ctica 12
+ Manual: Realizando modificaciones a la funcion de animacion logramos que el carro pueda cambiar de ir hacia atras vuele y luego baje.
+ */
 #include "texture.h"
 #include "figuras.h"
 #include "Camera.h"
@@ -115,7 +115,7 @@ CModel llanta;
 CModel casita;
 CModel oldhouse;
 
-//AnimaciÛn del coche
+//Animaci√≥n del coche
 float angRot = 0.0;
 float movKitX = 0.0;
 float movKitZ = 0.0;
@@ -709,7 +709,7 @@ void display ( void )   // Creamos la funcion donde se dibuja
 				glRotatef(90, 0, 1, 0);
 				glScalef(0.3, 0.3, 0.3);
 				glTranslatef(0, movy, movKit);
-				//Pongo aquÌ la carroceria del carro
+				//Pongo aqu√≠ la carroceria del carro
 				kit.GLrender(NULL, _SHADED, 1.0);  //_WIRED O _POINTS
 
 				glPushMatrix();
@@ -923,13 +923,13 @@ void keyboard ( unsigned char key, int x, int y )  // Create Keyboard Function
 
 		case 'O':		//  
 		case 'o':
-				g_fanimacion^= true; //Activamos/desactivamos la animacÌon
+				g_fanimacion^= true; //Activamos/desactivamos la animac√≠on
 				circuito = false;
 			break;
 
 		case 'i':		//  
 		case 'I':
-				circuito^= true; //Activamos/desactivamos la animacÌon
+				circuito^= true; //Activamos/desactivamos la animac√≠on
 				g_fanimacion = true;
 				circuito2 = false;
 				printf("%f", movKit2);
@@ -938,7 +938,7 @@ void keyboard ( unsigned char key, int x, int y )  // Create Keyboard Function
 
 		case 'r':		//  
 		case 'R':
-			circuito2 ^= true; //Activamos/desactivamos la animacÌon
+			circuito2 ^= true; //Activamos/desactivamos la animac√≠on
 			g_fanimacion = false;
 			circuito = false;
 			break;
@@ -1109,14 +1109,14 @@ int main ( int argc, char** argv )   // Main Function
 
   glutInit            (&argc, argv); // Inicializamos OpenGL
   glutInitDisplayMode (GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-  glutInitWindowSize  (500, 500);	// TamaÒo de la Ventana
+  glutInitWindowSize  (500, 500);	// Tama√±o de la Ventana
   glutInitWindowPosition (0, 0);	//Posicion de la Ventana
   glutCreateWindow    ("Practica 12"); // Nombre de la Ventana
   //glutFullScreen     ( );         // Full Screen
   InitGL ();						// Parametros iniciales de la aplicacion
-  glutDisplayFunc     ( display );  //Indicamos a Glut funciÛn de dibujo
-  glutReshapeFunc     ( reshape );	//Indicamos a Glut funciÛn en caso de cambio de tamano
-  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut funciÛn de manejo de teclado
+  glutDisplayFunc     ( display );  //Indicamos a Glut funci√≥n de dibujo
+  glutReshapeFunc     ( reshape );	//Indicamos a Glut funci√≥n en caso de cambio de tamano
+  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut funci√≥n de manejo de teclado
   glutSpecialFunc     ( arrow_keys );	//Otras
   glutIdleFunc		  ( animacion );
 
